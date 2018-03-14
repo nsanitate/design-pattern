@@ -1,0 +1,23 @@
+@startuml Strategy Pattern
+title Strategy Pattern
+class Client {
+    IBehaviour behaviour
+    execute()
+}
+
+interface IBehaviour {
+    run()
+}
+
+class ConcreteBehaviourA {
+    run()
+}
+
+class ConcreteBehaviourB {
+    run()
+}
+
+Client --> IBehaviour
+IBehaviour <|-- ConcreteBehaviourA
+IBehaviour <|-- ConcreteBehaviourB
+@enduml

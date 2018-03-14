@@ -1,0 +1,23 @@
+@startuml Strategy Pattern Example
+title Strategy Pattern Example
+class Duck {
+    IFlyBehaviour flyBehaviour
+    fly()
+}
+
+interface IFlyBehaviour {
+    fly()
+}
+
+class SimpleFly {
+    fly()
+}
+
+class NoFly {
+    fly()
+}
+
+Duck --> IFlyBehaviour
+IFlyBehaviour <|-- SimpleFly
+IFlyBehaviour <|-- NoFly
+@enduml
