@@ -17,7 +17,7 @@ class NoFly {
     fly()
 }
 
-Duck --> IFlyBehaviour
+Duck -> IFlyBehaviour
 IFlyBehaviour <|-- SimpleFly
 IFlyBehaviour <|-- NoFly
 @enduml

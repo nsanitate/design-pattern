@@ -17,7 +17,7 @@ class ConcreteBehaviourB {
     run()
 }
 
-Client --> IBehaviour
+Client -> IBehaviour
 IBehaviour <|-- ConcreteBehaviourA
 IBehaviour <|-- ConcreteBehaviourB
 @enduml
