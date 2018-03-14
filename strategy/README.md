@@ -4,7 +4,7 @@ The strategy pattern defines a family of algorithms, encapsulates each one, and 
 
 ## Explaination
 
-![Strategy Pattern Explaination UML](http://www.plantuml.com/plantuml/proxy?src=https://raw.github.com/n.sanitate/design-patter/master/strategy/doc/explaination.puml)
+![Strategy Pattern Explaination UML](http://www.plantuml.com/plantuml/proxy?http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/nsanitate/desing-pattern/master/strategy/doc/explaination.puml)
 
 where
 
@@ -24,7 +24,7 @@ class Client {
 
 ## Example
 
-![Strategy Pattern Example UML](http://www.plantuml.com/plantuml/proxy?src=https://raw.github.com/n.sanitate/design-patter/master/strategy/doc/example.puml)
+![Strategy Pattern Example UML](http://www.plantuml.com/plantuml/proxy?src=http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/nsanitate/desing-pattern/master/strategy/doc/example.puml)
 
 where
 
