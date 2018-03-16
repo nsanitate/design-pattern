@@ -1,5 +1,5 @@
-@startuml Strategy Pattern Example
-title Strategy Pattern Example
+@startuml Strategy Pattern example class diagram
+title Strategy Pattern example class diagram
 class Duck {
     IFlyBehaviour flyBehaviour
     fly()

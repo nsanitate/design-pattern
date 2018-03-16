@@ -1,5 +1,5 @@
-@startuml Strategy Pattern
-title Strategy Pattern
+@startuml Strategy Pattern class diagram
+title Strategy Pattern class diagram
 class Client {
     IBehaviour behaviour
     execute()
