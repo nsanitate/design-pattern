@@ -1,0 +1,32 @@
+@startuml
+participant weatherStation <<IweatherStation>>
+participant phoneDisplay <<IObserver>>
+participant windowDisplay <<IObserver>>
+
+activate weatherStation
+activate phoneDisplay
+activate windowDisplay
+
+phoneDisplay -> weatherStation : "add"
+windowDisplay -> weatherStation : "add"
+
+-> weatherStation : "setTemperature"
+weatherStation -> weatherStation : "notifyObservers"
+activate weatherStation
+
+weatherStation -> phoneDisplay : "update"
+phoneDisplay -> weatherStation : "getTemperature"
+activate weatherStation
+deactivate weatherStation
+
+weatherStation -> windowDisplay : "update"
+windowDisplay -> weatherStation : "getTemperature"
+activate weatherStation
+deactivate weatherStation
+
+deactivate weatherStation
+
+deactivate phoneDisplay
+deactivate windowDisplay
+deactivate weatherStation
+@enduml

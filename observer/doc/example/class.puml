@@ -1,0 +1,42 @@
+@startuml Observer Pattern Example
+title Observer Pattern Example
+interface IObservable {
+    List<IObservable> observers
+    
+    add(IObserver)
+    remove(IObservable)
+    notifyObservers()
+}
+
+interface IObserver {
+    update()
+}
+
+class WeatherStation {
+    int temperature
+
+    add(IObserver)
+    remove(IObservable)
+    notifyObservers()
+
+    int getTemperature()
+    setTemperature(int temperature)
+}
+
+class PhoneDisplay {
+    WeatherStation weatherStation
+    update()
+}
+
+class WindowDisplay {
+    WeatherStation weatherStation
+    update()
+}
+
+IObservable -> "0..n" IObserver
+IObservable <|-- WeatherStation
+IObserver <|-- PhoneDisplay
+WeatherStation <- PhoneDisplay
+IObserver <|-- WindowDisplay
+WeatherStation <- WindowDisplay
+@enduml

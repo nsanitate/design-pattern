@@ -1,0 +1,30 @@
+@startuml
+participant observable <<IObservable>>
+participant observer1 <<IObserver>>
+participant observer2 <<IObserver>>
+
+activate observable
+activate observer1
+activate observer2
+
+observer1 -> observable : "add"
+observer2 -> observable : "add"
+observable -> observable : "notifyObservers"
+activate observable
+
+observable -> observer1 : "update"
+observer1 -> observable : "getState"
+activate observable
+deactivate observable
+
+observable -> observer2 : "update"
+observer2 -> observable : "getState"
+activate observable
+deactivate observable
+
+deactivate observable
+
+deactivate observer1
+deactivate observer2
+deactivate observable
+@enduml

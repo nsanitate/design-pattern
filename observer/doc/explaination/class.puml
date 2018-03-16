@@ -1,0 +1,33 @@
+@startuml Observer Pattern
+title Observer Pattern
+interface IObservable {
+    List<IObserver> observers
+
+    add(IObserver)
+    remove(IObservable)
+    notifyObservers()
+}
+
+interface IObserver {
+    update()
+}
+
+class ConcreteObservable {
+    add(IObserver)
+    remove(IObservable)
+    notifyObservers()
+
+    getState()
+}
+
+class ConcreteObserver {
+    ConcreteObservable concreteObservable
+    
+    update()
+}
+
+IObservable -> "0..n" IObserver
+IObservable <|-- ConcreteObservable
+IObserver <|-- ConcreteObserver
+ConcreteObservable <- ConcreteObserver
+@enduml
