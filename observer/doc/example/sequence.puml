@@ -1,4 +1,5 @@
-@startuml
+@startuml Observer Pattern example sequence diagram
+title Observer Pattern example sequence diagram
 participant weatherStation <<IweatherStation>>
 participant phoneDisplay <<IObserver>>
 participant windowDisplay <<IObserver>>

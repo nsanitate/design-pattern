@@ -1,5 +1,5 @@
-@startuml Observer Pattern
-title Observer Pattern
+@startuml Observer Pattern class diagram
+title Observer Pattern sequence diagram
 interface IObservable {
     List<IObserver> observers
 

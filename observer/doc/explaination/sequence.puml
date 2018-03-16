@@ -1,4 +1,5 @@
-@startuml
+@startuml Observer Pattern sequence diagram
+title Observer Pattern sequence diagram
 participant observable <<IObservable>>
 participant observer1 <<IObserver>>
 participant observer2 <<IObserver>>
