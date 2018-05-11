@@ -3,13 +3,13 @@ package com.apuliasoft.designpattern.strategy.example;
 public class Main {
     public static void main(String[] args) {
         // Run behaviour A
-        IFlyBehaviour simpleFlyBehaviour = new SimpleFlyBehaviour();
-        Duck simpleFlyingDuck = new Duck(simpleFlyBehaviour);
-        simpleFlyingDuck.fly();
+        ISortBehaviour bubbleSortBehaviour = new BubbleSortBehaviour();
+        List bubbleSortedList = new List(bubbleSortBehaviour);
+        bubbleSortedList.sort();
 
         // Run behaviour B
-        IFlyBehaviour noFlyBehaviour = new NoFlyBehaviour();
-        Duck noFlyingDuck = new Duck(noFlyBehaviour);
-        noFlyingDuck.fly();
+        ISortBehaviour mergeSortBehaviour = new MergeSortBehaviour();
+        List mergeSortedList = new List(mergeSortBehaviour);
+        mergeSortedList.sort();
     }
 }

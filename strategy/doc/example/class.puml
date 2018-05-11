@@ -1,23 +1,23 @@
 @startuml Strategy Pattern example class diagram
 title Strategy Pattern example class diagram
-class Duck {
-    IFlyBehaviour flyBehaviour
-    fly()
+class List {
+    ISortBehaviour sortBehaviour
+    List sort()
 }
 
-interface IFlyBehaviour {
-    fly()
+interface ISortBehaviour {
+    List sort(List list)
 }
 
-class SimpleFly {
-    fly()
+class BubbleSortBehaviour {
+    List sort(List list)
 }
 
-class NoFly {
-    fly()
+class MergeSortBehaviour {
+    List sort(List list)
 }
 
-Duck -> IFlyBehaviour
-IFlyBehaviour <|-- SimpleFly
-IFlyBehaviour <|-- NoFly
+List -> ISortBehaviour
+ISortBehaviour <|-- BubbleSortBehaviour
+ISortBehaviour <|-- MergeSortBehaviour
 @enduml
