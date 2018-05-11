@@ -2,11 +2,11 @@
 
 The observer pattern defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically.
 
-## Explaination
+## Explanation
 
-![Observer Pattern Explaination UML](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/nsanitate/desing-pattern/master/observer/doc/explaination/class.puml)
+![Observer Pattern Explanation UML](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/nsanitate/desing-pattern/master/observer/doc/explanation/class.puml)
 
-![Observer Pattern Explaination UML](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/nsanitate/desing-pattern/master/observer/doc/explaination/sequence.puml)
+![Observer Pattern Explanation UML](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/nsanitate/desing-pattern/master/observer/doc/explanation/sequence.puml)
 
 where
 

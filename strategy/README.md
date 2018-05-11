@@ -2,9 +2,9 @@
 
 The strategy pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
 
-## Explaination
+## Explanation
 
-![Strategy Pattern Explaination UML](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/nsanitate/desing-pattern/master/strategy/doc/explaination/class.puml)
+![Strategy Pattern Explanation UML](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/nsanitate/desing-pattern/master/strategy/doc/explanation/class.puml)
 
 where
 

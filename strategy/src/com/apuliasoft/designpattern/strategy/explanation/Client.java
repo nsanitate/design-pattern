@@ -1,4 +1,4 @@
-package com.apuliasoft.designpattern.strategy.explaination;
+package com.apuliasoft.designpattern.strategy.explanation;
 
 public class Client {
     private IBehaviour behaviour;

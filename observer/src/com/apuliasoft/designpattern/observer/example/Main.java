@@ -1,8 +1,8 @@
 package com.apuliasoft.designpattern.observer.example;
 
-import com.apuliasoft.designpattern.observer.explaination.IObserver;
-import com.apuliasoft.designpattern.observer.explaination.WeatherStation;
-import com.apuliasoft.designpattern.observer.explaination.WindowDisplay;
+import com.apuliasoft.designpattern.observer.explanation.IObserver;
+import com.apuliasoft.designpattern.observer.explanation.WeatherStation;
+import com.apuliasoft.designpattern.observer.explanation.WindowDisplay;
 
 public class Main {
     public static void main(String[] args) {

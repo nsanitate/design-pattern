@@ -1,4 +1,4 @@
-package com.apuliasoft.designpattern.observer.explaination;
+package com.apuliasoft.designpattern.observer.explanation;
 
 public interface IObservable {
     List<IObserver> observers;

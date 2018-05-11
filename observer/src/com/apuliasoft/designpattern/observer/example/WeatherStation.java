@@ -1,4 +1,4 @@
-package com.apuliasoft.designpattern.observer.explaination;
+package com.apuliasoft.designpattern.observer.explanation;
 
 import java.util.ArrayList;
 import java.util.List;

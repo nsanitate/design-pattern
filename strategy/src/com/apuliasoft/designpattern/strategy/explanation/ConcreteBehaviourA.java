@@ -1,4 +1,4 @@
-package com.apuliasoft.designpattern.strategy.explaination;
+package com.apuliasoft.designpattern.strategy.explanation;
 
 public class ConcreteBehaviourA implements IBehaviour {
     public void run() {
